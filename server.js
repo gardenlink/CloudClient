@@ -92,7 +92,7 @@ for (var dev in ifaces) {
 
 console.log("Lectura archivo de configuracion config.json...");
 appHost = config.app_host;
-appPort = config.app_port;
+appPort = process.env.PORT || config.app_port;
 
 
 
