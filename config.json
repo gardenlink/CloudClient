@@ -1,0 +1,62 @@
+{
+  "debug": {
+    "app_host" : "localhost",
+    "app_port" : "9000",
+    "datasource" : {
+        "NEDB"  : { "Habilitado" : "false",
+                    "Sincronizacion" : "true",
+                    "Intervalo" : "1" },
+        "MONGO" : { "Habilitado" : "true",
+                     "Sincronizacion" : "false",
+                     "Intervalo" : "1",
+                     "Debug" : "true",
+                     "UserName" : "botanicbot",
+                     "Password" : "181005"
+                      },
+        "DWEET" : { "Habilitado" : "false",
+                    "Sincronizacion" : "true",
+                    "Intervalo" : "1",
+                    "prefijo_sensor" : "bb_njs_sensor_",
+                    "prefijo_bomba" : "bb_njs_relay_",
+                    "prefijo_dispositivo": "bb_njs_device_"
+                  }
+        },
+    "mail_enabled" : "false",
+    "mailer_service" : "GMAIL",
+    "mailer_user" : "",
+    "mailer_pass" : "",
+    "mailer_destinatario" : "diego.navarro.m@gmail.com",
+    "mailer_remitente" : "botanicbot01@gmail.com"
+  },
+  "release": {
+    "app_host" : "controlbomba.ddns.net",
+    "app_port" : "9000",
+     "datasource" : {
+        "NEDB"  : { "Habilitado" : "false",
+                    "Sincronizacion" : "false",
+                    "Intervalo" : "1",
+                    "Master" : "true" },
+        "MONGO" : { "Habilitado" : "true",
+                     "Sincronizacion" : "false",
+                     "Intervalo" : "1",
+                     "Debug" : "true",
+                     "UserName" : "botanicbot",
+                     "Password" : "181005"
+                      },
+        "DWEET" : { "Habilitado" : "false",
+                    "Sincronizacion" : "false",
+                    "Intervalo" : "1",
+                    "Master" : "false",
+                    "prefijo_sensor" : "bb_njs_sensor_",
+                    "prefijo_bomba" : "bb_njs_relay_",
+                    "prefijo_dispositivo": "bb_njs_device_"
+                  }
+        },
+    "mail_enabled" : "false",
+    "mailer_service" : "GMAIL",
+    "mailer_user" : "",
+    "mailer_pass" : "",
+    "mailer_destinatario" : "diego.navarro.m@gmail.com",
+    "mailer_remitente" : "botanicbot01@gmail.com"
+  }
+}
