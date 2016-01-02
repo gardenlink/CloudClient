@@ -1,5 +1,5 @@
 {
-  "name": "BotanicBot",
+  "name": "CloudClient",
   "version": "0.0.1",
   "dependencies": {
     "apidoc": "0.12.1",
@@ -22,13 +22,16 @@
     "unit.js": "^2.0.0",
     "winston": "0.9.0"
   },
+   "engines": {
+    "node": "0.10.25"
+  },
   "apidoc": {
     "title": "CloudClient",
     "url": ""
   },
   "scripts": {
     "start": "node server.js release",
-	"test": "mocha test"
+	  "test": "mocha test"
   },
   "description": "API Rest hosteada en Heroku para consumo desde servicios cloud",
   "main": "server.js",
@@ -44,6 +47,6 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Botanicbot/CloudClient.git"
   }
 }
